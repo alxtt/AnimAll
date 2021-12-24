@@ -1,22 +1,18 @@
 import React, {useContext} from 'react';
-import {Redirect, Route, Switch} from "react-router-dom";
+import { Routes ,Route } from 'react-router-dom';
 import {privateRoutes, publicRoutes} from "../router";
-import Loader from "./UI/Loader/Loader";
+import App from "../App";
+import About from "../pages/About";
+import Posts from "../pages/Posts";
 
 const AppRouter = () => {
 
     return (
-            <Switch>
-                {privateRoutes.map(route =>
-                    <Route
-                        component={route.component}
-                        path={route.path}
-                        exact={route.exact}
-                        key={route.path}
-                    />
-                )}
-                <Redirect to='/posts'/>
-            </Switch>
+        <Routes>
+            <Route path="/" element={<About />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/posts" element={<Posts />} />
+        </Routes>
     );
 };
 
