@@ -1,19 +1,18 @@
-import React, {useEffect, useState} from 'react';
-import './styles/App.css';
-import {BrowserRouter} from "react-router-dom";
-import Navbar from "./components/UI/Navbar/Navbar";
-import AppRouter from "./components/AppRouter";
+export default App;
+
+import React, { useState, useEffect } from 'react';
 
 function App() {
+  const [data, setData] = useState('');
 
+  useEffect(() => {
+    (async function () {
+      const { text } = await( await fetch(`/api/HttpTrigger`)).json();
+      setData(text);
+    })();
+  });
 
-    return (
-            <BrowserRouter>
-                <Navbar/>
-                <AppRouter/>
-            </BrowserRouter>
-
-    )
+  return <div>{data}</div>;
 }
 
 export default App;
