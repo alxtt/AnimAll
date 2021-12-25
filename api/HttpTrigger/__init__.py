@@ -1,14 +1,19 @@
 import datetime
 import logging
-
+import os
+import requests
+import json
+import pyodbc
+from datetime import datetime as dt
 import azure.functions as func
 
+AZURE_CONN_STRING = str(os.environ["AzureSQLConnectionString"])
 
-def main(mytimer: func.TimerRequest) -> None:
-    utc_timestamp = datetime.datetime.utcnow().replace(
-        tzinfo=datetime.timezone.utc).isoformat()
+def main(req: func.HttpRequest) -> func.HttpResponse:
+        conn = pyodbc.connect(AZURE_CONN_STRING)
+        
+        with conn.cursor() as cursor:
+                   
+        cursor.close()
 
-    if mytimer.past_due:
-        logging.info('The timer is past due!')
-
-    logging.info('Python timer trigger function ran at %s', utc_timestamp)
+    return func.HttpResponse(json.dumps(result))
