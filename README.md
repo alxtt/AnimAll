@@ -94,7 +94,7 @@ timedate | TIMESTAMP | NOT NULL
 
 # UI / API 
 
-- UI: React (JavaScript)
+- UI: React (JavaScript) [Web App], Tkinter (Python) [Desktop App]
 - API: SQLAlchemy (Python Flask)
 
 # Технологии разработки
