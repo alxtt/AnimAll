@@ -3,13 +3,13 @@
     {
       "id": 1,
       "title": "Post 1",
-      "url": "https://via.placeholder.com/600/92c952",
+      "url": "https://via.placeholder.com/300/92c952",
       "thumbnailUrl": "https://via.placeholder.com/150/92c952"
     },
     {
       "id": 2,
       "title": "Post 2",
-      "url": "https://via.placeholder.com/600/92c952",
+      "url": "https://via.placeholder.com/300/92c952",
       "thumbnailUrl": "https://via.placeholder.com/150/92c952"
     }
   ],
