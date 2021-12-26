@@ -21,4 +21,8 @@
     letter-spacing: 0.75px;
 
     color: #FFFFFF;
+
+    display: flex;
+    border-radius: 36.5px;
+    background-color: #2e4960;
 }

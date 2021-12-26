@@ -48,7 +48,7 @@ body {
     letter-spacing: 0.75px;
     padding: 45px;
     color: #2E4960;
-
+    z-index: 0;
 }
 
 .post__btns {
@@ -56,11 +56,20 @@ body {
     margin-top: 380px;
     margin-right: 45px;
     display: flex;
-    width: 135px;
-    height: 67px;
-    font-size: 48px;
+}
+
+.enter {
+    background: #EFF0F6;
+    position: absolute;
+    top: 20%;
+    right: 35%;
+    padding: 30px;
+    z-index: 999999;
     border-radius: 36.5px;
-    background-color: #2e4960;
+}
+
+.countr h1 {
+    margin-left: 28px;
 }
 
 .post-enter {
@@ -127,12 +136,12 @@ body {
 }
 
 .navbar {
-    position: absolute;
+    position: sticky;
     width: 100%;
     height: 95px;
     left: 0px;
-    top: 0px;
-
+    top: 0;
+    z-index: 99999;
     background: #A0A3BD;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 0px 0px 10px 10px;
@@ -256,6 +265,7 @@ body {
     display: flex;
     margin-top: 165px;
     margin-left: 240px;
+    z-index: 100000;
 }
 
 .logbtn {

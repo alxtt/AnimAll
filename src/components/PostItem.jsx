@@ -1,6 +1,7 @@
 import React from 'react';
 import MyButton from "./UI/button/MyButton";
 import { useNavigate } from 'react-router-dom';
+import Counter from "./Counter";
 
 const PostItem = (props) => {
     const router = useNavigate();
@@ -18,9 +19,7 @@ const PostItem = (props) => {
                 </div>
             </div>
             <div className="post__btns">
-                <MyButton>
-                    I adopt
-                </MyButton>
+                <Counter></Counter>
             </div>
         </div>
     );

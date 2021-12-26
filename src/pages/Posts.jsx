@@ -11,6 +11,8 @@ import PostList from "../components/PostList";
 import Loader from "../components/UI/Loader/Loader";
 import Pagination from "../components/UI/pagination/Pagination";
 import {useObserver} from "../hooks/useObserver";
+import Profile from "../components/Profile";
+import LogoutButton from "../components/LogOutButton";
 
 
 function Posts() {
@@ -54,12 +56,19 @@ function Posts() {
 
     return (
         <div className="App">
+            <div className="search_buttons">
+                <div className="logtbtn">
+                    <Profile/>
+                    <LogoutButton/>
+                </div>
+            </div>
             <MyButton style={{marginTop: 30}} onClick={() => setModal(true)}>
                 Create page
             </MyButton>
-            <MyModal visible={modal} setVisible={setModal}>
-                <PostForm create={createPost}/>
-            </MyModal>
+
+                <MyModal visible={modal} setVisible={setModal}>
+                    <div className="enter"><PostForm create={createPost}/></div>
+                </MyModal>
             <hr style={{margin: '15px 0'}}/>
             <PostFilter
                 filter={filter}
