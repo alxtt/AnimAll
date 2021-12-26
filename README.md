@@ -19,13 +19,18 @@ AnimAll
 name | type | constraints
 --- | --- | ---
 id | UNIQUIEIDENTIFIER | NOT NULL PRIMARY KEY
-species | VARCHAR(32) | NOT NULL
-breed | VARCHAR(32) | 
+breed | VARCHAR(32) | FOREIGN KEY
 gender | BIT | NOT NULL
 age | INT |
 infirm | BIT |
 vaccinated | BIT |
 shelter_id | UNIQUIEIDENTIFIER | NOT NULL FOREIGN KEY
+
+### species
+name | type | constraints
+--- | --- | ---
+breed | VARCHAR(32) | NOT NULL PRIMARY KEY
+species | VARCHAR(32) | NOT NULL 
 
 ### users
 name | type | constraints
