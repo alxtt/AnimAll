@@ -190,20 +190,20 @@ class Search(tk.Toplevel):
         self.view = app
 
     def init_search(self):
-        self.title('Поиск')
+        self.title('Search')
         self.geometry('400x300+400+300')
         self.resizable(False, False)
 
-        label_search = tk.Label(self, text='Поиск')
+        label_search = tk.Label(self, text='Search')
         label_search.place(x=50, y=20)
 
         self.entry_search = ttk.Entry(self)
         self.entry_search.place(x=105, y=20, width=150)
 
-        btn_cancel = ttk.Button(self, text='Закрыть', command=self.destroy)
+        btn_cancel = ttk.Button(self, text='CLose', command=self.destroy)
         btn_cancel.place(x=185, y=50)
 
-        btn_search = ttk.Button(self, text='Поиск')
+        btn_search = ttk.Button(self, text='Search')
         btn_search.place(x=105, y=50)
         btn_search.bind('<Button-1>', lambda event: self.view.search_records(self.entry_search.get()))
         btn_search.bind('<Button-1>', lambda event: self.destroy(), add='+')
