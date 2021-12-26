@@ -10,7 +10,7 @@ const PostItem = (props) => {
         <div className="post">
             <div className="post__content">
                 <div className="petimage">
-                    <img src={props.post.url} />
+                    <img src={props.post.url} alt="My Awesome Image" />
                 </div>
                 <div className="petdesc">
                     <h1>{props.post.title}</h1>
