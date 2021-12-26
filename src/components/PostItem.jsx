@@ -8,9 +8,12 @@ const PostItem = (props) => {
     return (
         <div className="post">
             <div className="post__content">
-                <div className="petimage"></div>
+                <div className="petimage">
+                    <img src={props.post.url} />
+                </div>
                 <div className="petdesc">
                     <h1>{props.post.title}</h1>
+                    <h2>{props.post.subtitle}</h2>
                     {props.post.body}
                 </div>
             </div>

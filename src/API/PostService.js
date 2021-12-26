@@ -2,7 +2,7 @@ import axios from "axios";
 
 export default class PostService {
     static async getAll(limit = 10, page = 1) {
-        const response = await axios.get('', {
+        const response = await axios.get('https://my-json-server.typicode.com/alxtt/AnimAll/posts', {
             params: {
                 _limit: limit,
                 _page: page
@@ -12,12 +12,12 @@ export default class PostService {
     }
 
     static async getById(id) {
-        const response = await axios.get('' + id)
+        const response = await axios.get('https://my-json-server.typicode.com/alxtt/AnimAll/posts' + id)
         return response;
     }
 
     static async getCommentsByPostId(id) {
-        const response = await axios.get(``)
+        const response = await axios.get(`https://my-json-server.typicode.com/alxtt/AnimAll/posts${id}/comments`)
         return response;
     }
 }

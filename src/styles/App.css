@@ -13,7 +13,7 @@
 }
 
 .App {
-    width: 80%;
+    width: 1200px;
     padding: 100px;
 
 }
@@ -24,8 +24,7 @@ body {
 }
 
 .post {
-    width: 1360px;
-    height: 466px;
+    height: 500px;
     left: 232px;
     top: 321px;
     background: #EFF0F6;
@@ -41,9 +40,10 @@ body {
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
-    line-height: 28px;
+    line-height: 14px;
     /* or 140% */
-
+    width: 800px;
+    height: 800px;
     display: flex;
     letter-spacing: 0.75px;
     padding: 45px;
@@ -52,13 +52,13 @@ body {
 }
 
 .post__btns {
-    position: absolute;
-    margin-top: 350px;
-    margin-left: 550px;
+    position: relative;
+    margin-top: 380px;
+    margin-right: 45px;
     display: flex;
-    width: 125px;
+    width: 135px;
     height: 67px;
-
+    font-size: 48px;
     border-radius: 36.5px;
     background-color: #2e4960;
 }
@@ -79,14 +79,16 @@ body {
 }
 
 .petdesc {
+    margin-left: 30px;
+    margin-top: 48px;
     position: relative;
     height: 40px;
     position: flex;
     font-family: Poppins;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
-    line-height: 28px;
+    font-size: 12px;
+    line-height: 16px;
 }
 
 .petdesc h1 {
@@ -98,6 +100,13 @@ body {
     font-weight: normal;
     font-size: 24px;
     line-height: 24px;
+}
+
+.petimage {
+    position: relative;
+    margin-top: 50px;
+    width: 300px;
+    height: 300px;
 }
 
 
@@ -113,7 +122,7 @@ body {
 }
 
 .page__current {
-    border: 2px solid orange;
+    border: 1px solid orange;
     font-weight: bold;
 }
 
@@ -242,10 +251,39 @@ body {
 
 .search_buttons {
     position: absolute;
+    left: 7%;
+    top: 25%;
     display: flex;
-    padding: 15px;
     margin-top: 165px;
     margin-left: 240px;
+}
+
+.logbtn {
+    text-align: center;
+    white-space:nowrap;
+    margin-top: 14px;
+    margin-left: 10px;
+}
+
+.logtbtn {
+    position: fixed;
+    top: 25px;
+    right: 100px;
+    border-radius: 36.5px;
+    background-color: #2e4960;
+}
+
+.userprofile {
+    position: fixed;
+    top: 8px;
+    right: 300px;
+    font-family: Arial;
+    font-style: normal;
+    display: flex;
+    width: 80px;
+    height: 80px;
+    font-size: 14px;
+    border-radius: 6px;
 }
 
 .group-1 {
@@ -257,7 +295,8 @@ body {
 
     position: relative;
     top: 50%;
-    left: 20%;
+    left: 10%;
+    margin-left: 15px;
     display: flex;
     width: 125px;
     height: 67px;

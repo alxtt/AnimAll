@@ -9,6 +9,11 @@ const PostFilter = ({filter, setFilter}) => {
                 onChange={e => setFilter({...filter, query: e.target.value})}
                 placeholder="Search"
             />
+            <MyInput
+                value={filter.query}
+                onChange={e => setFilter({...filter, query: e.target.value})}
+                placeholder="Search"
+            />
         </div>
     );
 };
