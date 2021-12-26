@@ -13,7 +13,7 @@ AnimAll
 Приюты для животных, благотворительность, поиск пропавших животных
 
 # Данные
-![ER Diagram blank](https://github.com/alxtt/bdweb-project/blob/main/er-diagram.png)
+![ER Diagram blank](https://raw.githubusercontent.com/alxtt/AnimAll/main/AnimAll-BD%20.png)
 
 ### animals
 name | type | constraints
