@@ -110,4 +110,4 @@ timedate | TIMESTAMP | NOT NULL
 
 ## СУБД
 
-- SQL Azure (Microsoft SQL Server)
+- SQLite
