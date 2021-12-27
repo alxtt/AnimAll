@@ -11,12 +11,13 @@ const Counter = function () {
 
     const { user, isAuthenticated, isLoading } = useAuth0();
 
-    return (isAuthenticated && (
+    return (
+            isAuthenticated && (
                 <div className="countr">
                     <h1>{count}</h1>
                     <MyButton onClick={increment}>LIKE</MyButton>
                 </div>
-        )
+            )
     )
 }
 
