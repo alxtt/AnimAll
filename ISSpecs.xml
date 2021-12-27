@@ -10,41 +10,41 @@
 			<PROPERTY>animal_breed</PROPERTY>
 			<PROPERTY>animal_gender</PROPERTY>
 			<PROPERTY>animal_age</PROPERTY>
-      <PROPERTY>animal_infirm</PROPERTY>
-      <PROPERTY>animal_vaccinated</PROPERTY>
-      <PROPERTY>animal_shelter_id</PROPERTY>
+                        <PROPERTY>animal_infirm</PROPERTY>
+                        <PROPERTY>animal_vaccinated</PROPERTY>
+                        <PROPERTY>animal_shelter_id</PROPERTY>
 		</ENTITY>
-    <ENTITY ent_id="species">
+                <ENTITY ent_id="species">
 			<PROPERTY>species_breed</PROPERTY>
-      <PROPERTY>species_species</PROPERTY>
+                        <PROPERTY>species_species</PROPERTY>
 		</ENTITY>
-    <ENTITY ent_id="user">
+                <ENTITY ent_id="user">
 			<PROPERTY>user_id</PROPERTY>
 			<PROPERTY>user_login</PROPERTY>
 			<PROPERTY>user_password</PROPERTY>
 			<PROPERTY>user_is_shelter</PROPERTY>
-      <PROPERTY>user_is_admin</PROPERTY>
-      <PROPERTY>user_name</PROPERTY>
-      <PROPERTY>user_location</PROPERTY>
+                        <PROPERTY>user_is_admin</PROPERTY>
+                        <PROPERTY>user_name</PROPERTY>
+                        <PROPERTY>user_location</PROPERTY>
 		</ENTITY>
-    <ENTITY ent_id="shelter">
+                <ENTITY ent_id="shelter">
 			<PROPERTY>shelter_id</PROPERTY>
-      <PROPERTY>shelter_user_id</PROPERTY>
-      <PROPERTY>shelter_name</PROPERTY>
-      <PROPERTY>shelter_adress</PROPERTY>
-      <PROPERTY>shelter_email</PROPERTY>
-      <PROPERTY>shelter_phone</PROPERTY>
-      <PROPERTY>shelter_website</PROPERTY>
+                        <PROPERTY>shelter_user_id</PROPERTY>
+                        <PROPERTY>shelter_name</PROPERTY>
+                        <PROPERTY>shelter_adress</PROPERTY>
+                        <PROPERTY>shelter_email</PROPERTY>
+                        <PROPERTY>shelter_phone</PROPERTY>
+                        <PROPERTY>shelter_website</PROPERTY>
 		</ENTITY>
-    <ENTITY ent_id="like">
+                <ENTITY ent_id="like">
 			<PROPERTY>like_animal_id</PROPERTY>
-      <PROPERTY>like_user_id</PROPERTY>
+                        <PROPERTY>like_user_id</PROPERTY>
 		</ENTITY>
-    <ENTITY ent_id="comment">
+                <ENTITY ent_id="comment">
 			<PROPERTY>comment_animal_id</PROPERTY>
-      <PROPERTY>comment_user_id</PROPERTY>
-      <PROPERTY>comment_content</PROPERTY>
-      <PROPERTY>comment_timedate</PROPERTY>
+                        <PROPERTY>comment_user_id</PROPERTY>
+                        <PROPERTY>comment_content</PROPERTY>
+                        <PROPERTY>comment_timedate</PROPERTY>
 		</ENTITY>
 		
 		
@@ -54,19 +54,19 @@
 		<RELATIONSHIP ent_ids="species animal">
 			<PROPERTY>many to many</PROPERTY>
 		</RELATIONSHIP>
-    <RELATIONSHIP ent_ids="like animal">
+                <RELATIONSHIP ent_ids="like animal">
 			<PROPERTY>one to many</PROPERTY>
 		</RELATIONSHIP>
-    <RELATIONSHIP ent_ids="like user">
+                <RELATIONSHIP ent_ids="like user">
 			<PROPERTY>one to many</PROPERTY>
 		</RELATIONSHIP>
-    <RELATIONSHIP ent_ids="comment user">
+                <RELATIONSHIP ent_ids="comment user">
 			<PROPERTY>one to many</PROPERTY>
 		</RELATIONSHIP>
-    <RELATIONSHIP ent_ids="comment animal">
+                <RELATIONSHIP ent_ids="comment animal">
 			<PROPERTY>one to many</PROPERTY>
 		</RELATIONSHIP>
-    <RELATIONSHIP ent_ids="shelter user">
+                <RELATIONSHIP ent_ids="shelter user">
 			<PROPERTY>one to many</PROPERTY>
 		</RELATIONSHIP>
     
@@ -76,25 +76,25 @@
 	<ROLES>
 		<ROLE>
 			<TITLE>user</TITLE>
-			<RESPONSIBILITY>Авторизоваться в системе</RESPONSIBILITY>
-      <RESPONSIBILITY>Просматривать страницы</RESPONSIBILITY>
-      <RESPONSIBILITY>Ставить “лайки” животным</RESPONSIBILITY>
-      <RESPONSIBILITY>Просматривать свои “лайки”</RESPONSIBILITY>
+			      <RESPONSIBILITY>Авторизоваться в системе</RESPONSIBILITY>
+                              <RESPONSIBILITY>Просматривать страницы</RESPONSIBILITY>
+                              <RESPONSIBILITY>Ставить “лайки” животным</RESPONSIBILITY>
+                              <RESPONSIBILITY>Просматривать свои “лайки”</RESPONSIBILITY>
 		</ROLE>
-    <ROLE>
+                <ROLE>
 			<TITLE>shelter</TITLE>
-			<RESPONSIBILITY>Все полномочия пользователя</RESPONSIBILITY>
-      <RESPONSIBILITY>Создавать страницы животных</RESPONSIBILITY>
-      <RESPONSIBILITY>Загружать информацию о животных</RESPONSIBILITY>
-      <RESPONSIBILITY>Редактировать и удалять страницы добавленных сотрудником той же организации животных</RESPONSIBILITY>
+			      <RESPONSIBILITY>Все полномочия пользователя</RESPONSIBILITY>
+                              <RESPONSIBILITY>Создавать страницы животных</RESPONSIBILITY>
+                              <RESPONSIBILITY>Загружать информацию о животных</RESPONSIBILITY>
+                              <RESPONSIBILITY>Редактировать и удалять страницы добавленных сотрудником той же организации животных</RESPONSIBILITY>
 		</ROLE>
 		<ROLE>
 			<TITLE>admin</TITLE>
-      <RESPONSIBILITY>Все полномочия сотрудника</RESPONSIBILITY>
-			<RESPONSIBILITY>Редактировать и удалять страницы животных</RESPONSIBILITY>
-      <RESPONSIBILITY>Давать и отзывать права сотрудников приютов</RESPONSIBILITY>
-      <RESPONSIBILITY>Удалять “лайки” пользователей</RESPONSIBILITY>
-      <RESPONSIBILITY>Удалять пользователей</RESPONSIBILITY>
+                              <RESPONSIBILITY>Все полномочия сотрудника</RESPONSIBILITY>
+			      <RESPONSIBILITY>Редактировать и удалять страницы животных</RESPONSIBILITY>
+                              <RESPONSIBILITY>Давать и отзывать права сотрудников приютов</RESPONSIBILITY>
+                              <RESPONSIBILITY>Удалять “лайки” пользователей</RESPONSIBILITY>
+                              <RESPONSIBILITY>Удалять пользователей</RESPONSIBILITY>
 		</ROLE>
 	</ROLES>
 	<TECHSPEC>
@@ -106,10 +106,10 @@
 			<TITLE>SQLite</TITLE>
 			<VERSION>3</VERSION>
 			<REASONING>
-        Легко переносима: база данных - один файл;
-        кросплатформенна и легко развёртывается на мобильных устройствах;
-        популярна и имеет обширную документацию.
-      </REASONING>
+                              Легко переносима: база данных - один файл;
+                              кросплатформенна и легко развёртывается на мобильных устройствах;
+                              популярна и имеет обширную документацию.
+                        </REASONING>
 		</DBMS>
 	</TECHSPEC>
 </ISSPECS>
