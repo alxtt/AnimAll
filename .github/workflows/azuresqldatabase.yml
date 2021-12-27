@@ -22,4 +22,4 @@ jobs:
           server-name: animall.database.windows.net
           connection-string: ${{ secrets.AZURE_SQL_CONNECTION_STRING}}
            # uses dacpac to deploy database schema
-          dacpac-package: './database/AnimAll-BD-2021-12-24-22-34.dacpac'
+          dacpac-package: './database/AnimAll-BD-2021-12-27-5-16.dacpac'
