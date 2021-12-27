@@ -1,15 +1,15 @@
-const data = require('../shared/product-data');
+const data = require('../shared/animals-data');
 
 module.exports = async function (context, req) {
-  const product = {
+  const animal = {
     id: undefined,
-    name: req.body.name,
-    description: req.body.description,
+    title: req.body.title,
+    body: req.body.body,
   };
 
   try {
-    const newProduct = data.addProduct(product);
-    context.res.status(201).json(newProduct);
+    const newAnimal = data.addAnimal(animal);
+    context.res.status(201).json(newAnimal);
   } catch (error) {
     context.res.status(500).send(error);
   }
