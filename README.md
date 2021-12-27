@@ -70,6 +70,7 @@ timedate | TIMESTAMP | NOT NULL
 
 ## Общие ограничения целостности
 - Связь `one to many`: `shelters` и `animals`.
+- Связь `many to many`: `species` и `animals`.
 - Связь `one to one`: `likes` и `animals`, `likes` и `users`, `comments` и `animals`, `comments` и `users`, `shelters` и `users`.
 
 # Пользовательские роли
