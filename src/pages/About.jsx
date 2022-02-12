@@ -16,36 +16,12 @@ import Profile from "../components/Profile";
 
 function About() {
     const { user, isAuthenticated, isLoading } = useAuth0();
-
-
-        if (isAuthenticated) {
             return (
                 <div className="main">
                     <h1 className="header">AnimAll</h1>
                     <h2 className="subheader">Thousands of animals are waiting for you.</h2>
-                    <div className="search_buttons">
-                            <div className="logtbtn">
-                                <Profile/>
-                                <LogoutButton/>
-                            </div>
-                    </div>
                 </div>
             );
-        } else {
-            return (
-                <div className="main">
-                    <h1 className="header">AnimAll</h1>
-                    <h2 className="subheader">Thousands of animals are waiting for you.</h2>
-                    <div className="search_buttons">
-                        <div className="rectangle">
-                            <div className="logbtn">
-                                <LoginButton/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            );
-        }
 }
 
 export default About;

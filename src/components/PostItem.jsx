@@ -2,6 +2,7 @@ import React from 'react';
 import MyButton from "./UI/button/MyButton";
 import { useNavigate } from 'react-router-dom';
 import Counter from "./Counter";
+import ReactTwitterFollowButton from 'react-twitter-follow-button';
 
 const PostItem = (props) => {
     const router = useNavigate();
@@ -17,9 +18,6 @@ const PostItem = (props) => {
                     <h2>{props.post.subtitle}</h2>
                     {props.post.body}
                 </div>
-            </div>
-            <div className="post__btns">
-                <Counter></Counter>
             </div>
         </div>
     );

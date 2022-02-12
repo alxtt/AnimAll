@@ -13,22 +13,21 @@ const Navbar = () => {
 
     if (isAuthenticated) {
         return (
-            <div className="navbar">
-                <div className="logo"></div>
-                <div className="navbar__links">
-                    <Link to="/about">Homepage</Link>
-                    <Link to="/posts">Dashboard</Link>
+            <nav className="navbar navbar-light bg-light">
+                <div className="container">
+                <a className="navbar-brand" href="/about">Homepage</a>
+                <a className="navbar-brand" href="/posts">Dashboard</a>
+                <a className="navbar-brand" href="/shelter">Shelters</a>
+                <a className="navbar-brand" href="/animal">Animals</a>
                 </div>
-            </div>
-        );
+            </nav>
+            );
     } else {
         return (
-            <div className="navbar">
-                <div className="logo"></div>
-                <div className="navbar__links">
-                    <Link to="/about">Homepage</Link>
-                </div>
-            </div>
+            <nav className="navbar navbar-light bg-light">
+                <a className="navbar-brand" href="/about">Homepage</a>
+                <a className="navbar-brand" href="/posts">Dashboard</a>
+            </nav>
         );
     }
 };

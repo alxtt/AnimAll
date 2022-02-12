@@ -14,7 +14,6 @@ import {useObserver} from "../hooks/useObserver";
 import Profile from "../components/Profile";
 import LogoutButton from "../components/LogOutButton";
 
-
 function Posts() {
     const [posts, setPosts] = useState([])
     const [filter, setFilter] = useState({sort: '', query: ''})
@@ -56,15 +55,6 @@ function Posts() {
 
     return (
         <div className="App">
-            <div className="search_buttons">
-                <div className="logtbtn">
-                    <Profile/>
-                    <LogoutButton/>
-                </div>
-            </div>
-            <MyButton style={{marginTop: 30}} onClick={() => setModal(true)}>
-                Create page
-            </MyButton>
 
                 <MyModal visible={modal} setVisible={setModal}>
                     <div className="enter"><PostForm create={createPost}/></div>
