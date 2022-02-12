@@ -2,4 +2,4 @@ build:
   docker:
     web: Dockerfile
 run:
-  web: bundle exec puma -C config/puma.rbheroku config:add GEM_PATH=vendor/bundle/2.0
+  web: python /code/manage.py runserver 0.0.0.0:$PORT
