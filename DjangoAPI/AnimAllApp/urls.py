@@ -5,6 +5,7 @@ from django.conf.urls.static import static
 from django.conf import settings
 
 urlpatterns=[
+    re_path(r'^$'),
     re_path(r'^shelter$',views.shelterApi),
     re_path(r'^shelter/([0-9]+)$',views.shelterApi),
 
