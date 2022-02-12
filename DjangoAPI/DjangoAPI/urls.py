@@ -19,7 +19,8 @@ from django.urls import path
 from django.urls import re_path, include
 
 urlpatterns = [
-    path(r'', admin.site.urls),
+    (r'^$', include('AnimAllApp.urls')),
     path('admin/', admin.site.urls),
     re_path(r'^', include('AnimAllApp.urls'))
 ] + static(settings.MEDIA_URL, document_root= settings.MEDIA_ROOT)
+
