@@ -32,7 +32,7 @@ SECRET_KEY = 'django-insecure-%s@dzax74r-qwwp$%6t(e$$$@n^&a6w_d!_su1u2yr@1=e167c
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['animall-sketch-app.herokuapp.com','localhost', '127.0.0.1']
 
 
 # Application definition
